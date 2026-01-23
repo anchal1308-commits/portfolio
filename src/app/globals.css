@@ -7,6 +7,8 @@
   --muted-foreground: #737373;
   --accent: #0a0a0a;
   --border: #e5e5e5;
+  --primary: #0078D4;
+  --primary-hover: #106EBE;
 }
 
 @theme inline {
@@ -16,6 +18,8 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

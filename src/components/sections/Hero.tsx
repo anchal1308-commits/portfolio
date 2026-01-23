@@ -18,8 +18,10 @@ export function Hero() {
         </FadeIn>
 
         <SlideIn delay={0.2}>
-          <p className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground sm:text-xl md:text-2xl">
-            Senior Product Designer at Microsoft | 8 years crafting cloud desktop experiences for Windows 365 & Azure Virtual Desktop
+          <p className="mx-auto mb-10 max-w-2xl text-lg sm:text-xl md:text-2xl">
+            <span className="font-semibold text-primary">Senior Product Designer at Microsoft</span>
+            <br />
+            <span className="text-muted-foreground">8 years crafting cloud desktop experiences</span>
           </p>
         </SlideIn>
 

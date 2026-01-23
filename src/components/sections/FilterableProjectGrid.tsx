@@ -30,7 +30,7 @@ export function FilterableProjectGrid({ projects }: FilterableProjectGridProps) 
               onClick={() => setActiveFilter(category)}
               className={`rounded-full px-6 py-2 text-sm font-medium transition-all ${
                 activeFilter === category
-                  ? 'bg-foreground text-background'
+                  ? 'bg-primary text-white'
                   : 'bg-muted text-foreground hover:bg-muted/80'
               }`}
             >

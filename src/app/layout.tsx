@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     default: "Anchal Aggarwal - Senior Product Designer at Microsoft",
     template: "%s | Anchal Aggarwal"
   },
-  description: "8 years designing enterprise SaaS at Microsoft. Specializing in Windows 365, Azure Virtual Desktop, and cloud computing experiences.",
-  keywords: ["product design", "Microsoft", "Enterprise SaaS", "Windows 365", "Azure Virtual Desktop", "cloud computing", "design systems"],
+  description: "8 years designing enterprise SaaS at Microsoft and Salesforce. Specializing in cloud desktop experiences and enterprise solutions.",
+  keywords: ["product design", "Microsoft", "Salesforce", "Enterprise SaaS", "cloud computing", "design systems"],
   authors: [{ name: "Anchal Aggarwal" }],
   creator: "Anchal Aggarwal",
   openGraph: {
@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
     title: "Anchal Aggarwal - Senior Product Designer at Microsoft",
-    description: "8 years designing enterprise SaaS at Microsoft. Specializing in Windows 365, Azure Virtual Desktop, and cloud computing experiences.",
+    description: "8 years designing enterprise SaaS at Microsoft and Salesforce. Specializing in cloud desktop experiences and enterprise solutions.",
     siteName: "Anchal Aggarwal Portfolio"
   },
   twitter: {
     card: "summary_large_image",
     title: "Anchal Aggarwal - Senior Product Designer at Microsoft",
-    description: "8 years designing enterprise SaaS at Microsoft. Specializing in Windows 365, Azure Virtual Desktop, and cloud computing experiences."
+    description: "8 years designing enterprise SaaS at Microsoft and Salesforce. Specializing in cloud desktop experiences and enterprise solutions."
   }
 };
 
