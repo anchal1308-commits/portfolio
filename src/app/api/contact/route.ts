@@ -3,13 +3,21 @@ import { Resend } from 'resend'
 import { contactSchema } from '@/lib/validations'
 import { z } from 'zod'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
     const validatedData = contactSchema.parse(body)
+
+    // Initialize Resend only when needed (at runtime)
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json(
+        { error: 'Email service not configured. Please contact via email directly.' },
+        { status: 503 }
+      )
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
     const { data, error } = await resend.emails.send({
       from: 'Portfolio Contact <onboarding@resend.dev>',
