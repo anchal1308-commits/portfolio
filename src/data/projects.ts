@@ -3,8 +3,8 @@ import { Project } from '@/types/project'
 export const projects: Project[] = [
   {
     id: '1',
-    slug: 'windows-365-setup-simplification',
-    title: 'Windows 365 Setup Simplification',
+    slug: 'windows-365-cloud-apps',
+    title: 'Windows 365 Cloud Apps',
     subtitle: 'Reducing IT admin onboarding time by 60%',
     category: 'Product',
     heroImage: '/images/projects/windows-365/hero.jpg',
@@ -67,8 +67,8 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    slug: 'avd-monitoring-dashboard',
-    title: 'AVD Insights Dashboard',
+    slug: 'windows-365-reserve',
+    title: 'Windows 365 Reserve',
     subtitle: 'Proactive monitoring for enterprise desktop infrastructure',
     category: 'Product',
     heroImage: '/images/projects/avd/hero.jpg',

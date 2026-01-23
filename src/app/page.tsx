@@ -5,7 +5,7 @@ import { projects } from '@/data/projects'
 import { FadeIn } from '@/components/animations/FadeIn'
 
 export default function Home() {
-  const featuredProjects = projects.slice(0, 3)
+  const featuredProjects = projects.slice(0, 2)
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function Home() {
             <div className="mb-12 text-center">
               <h2 className="mb-4 text-4xl font-bold md:text-5xl">Featured Work</h2>
               <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
-                A selection of recent projects showcasing user-centered design solutions
+                A selection of recent projects at Microsoft
               </p>
             </div>
           </FadeIn>

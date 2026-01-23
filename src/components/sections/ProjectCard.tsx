@@ -40,7 +40,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           <div className="mt-4">
             <div className="mb-2 flex items-center justify-between">
               <span className="text-sm text-muted-foreground">
-                {project.category} · {project.year}
+                Generally Available · 2025
               </span>
             </div>
             <h3 className="mb-2 text-xl font-semibold transition-colors group-hover:text-muted-foreground">

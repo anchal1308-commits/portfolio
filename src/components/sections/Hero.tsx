@@ -21,7 +21,7 @@ export function Hero() {
           <p className="mx-auto mb-10 max-w-2xl text-lg sm:text-xl md:text-2xl">
             <span className="font-semibold text-primary">Senior Product Designer at Microsoft</span>
             <br />
-            <span className="text-muted-foreground">8 years crafting cloud desktop experiences</span>
+            <span className="text-muted-foreground">8 years crafting cloud experiences</span>
           </p>
         </SlideIn>
 
