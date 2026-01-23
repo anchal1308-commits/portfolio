@@ -3,207 +3,195 @@ import { Project } from '@/types/project'
 export const projects: Project[] = [
   {
     id: '1',
-    slug: 'mobile-banking-redesign',
-    title: 'Mobile Banking Redesign',
-    subtitle: 'Simplifying financial management for millennials',
+    slug: 'windows-365-setup-simplification',
+    title: 'Windows 365 Setup Simplification',
+    subtitle: 'Reducing IT admin onboarding time by 60%',
     category: 'Product',
-    heroImage: '/images/projects/banking/hero.jpg',
-    thumbnail: '/images/projects/banking/thumbnail.jpg',
-    year: 2024,
-    client: 'FinTech Corp',
-    duration: '3 months',
+    heroImage: '/images/projects/windows-365/hero.jpg',
+    thumbnail: '/images/projects/windows-365/thumbnail.jpg',
+    year: 2023,
+    client: 'Microsoft',
+    duration: '6 months',
     role: 'Lead Product Designer',
-    overview: 'Redesigned the mobile banking application to improve user engagement and simplify complex financial tasks. The goal was to create an intuitive interface that would appeal to younger users while maintaining security and trust.',
-    challenge: 'The existing mobile banking app suffered from low user engagement and high abandonment rates. Users found the interface overwhelming with too many options presented upfront, and critical tasks like transfers and bill payments required too many steps to complete.',
+    overview: 'Redesigned the Windows 365 initial setup flow for IT administrators, transforming a complex 20-step configuration process into a guided 5-step experience. The goal was to reduce time-to-first-Cloud-PC while maintaining enterprise-grade security and customization.',
+    challenge: 'Windows 365 setup required IT admins to configure network settings, Azure AD groups, licensing, and security policies across multiple Azure portals. Research showed 73% of admins abandoned setup before completing it, and average completion time was 4+ hours for first-time users.',
     process: [
       {
-        title: 'User Research',
-        description: 'Conducted 20+ user interviews and analyzed behavioral data to understand pain points. Created user personas and journey maps to identify key opportunities for improvement.',
-        image: '/images/projects/banking/research.jpg'
+        title: 'Discovery & Research',
+        description: 'Conducted 30+ interviews with IT administrators across enterprise customers (Fortune 500). Analyzed telemetry data showing drop-off points. Created journey maps identifying pain points in Azure portal navigation, unclear prerequisites, and overwhelming configuration options.'
       },
       {
-        title: 'Information Architecture',
-        description: 'Reorganized the app structure based on user mental models. Prioritized the most common tasks and reduced navigation depth from 4-5 levels to 2-3 levels.',
-        image: '/images/projects/banking/ia.jpg'
+        title: 'Design Principles',
+        description: 'Established three core principles: Progressive Disclosure (show only what\'s needed now), Intelligent Defaults (reduce decisions), and Contextual Guidance (educate as users configure). These became foundational for the redesign.'
       },
       {
-        title: 'Design & Prototyping',
-        description: 'Created high-fidelity prototypes with smooth animations and micro-interactions. Conducted usability testing with 15 participants to validate design decisions.',
-        image: '/images/projects/banking/prototype.jpg'
+        title: 'Prototyping & Testing',
+        description: 'Built interactive prototypes with Microsoft Fluent components. Ran 5 rounds of usability testing with IT admins. Iterated based on task completion rates and qualitative feedback. Validated with both SMB and enterprise customers.'
       },
       {
-        title: 'Visual Design',
-        description: 'Developed a modern, minimalist visual language that balances approachability with professionalism. Created a comprehensive design system for consistency across all touchpoints.',
-        image: '/images/projects/banking/visual.jpg'
+        title: 'Collaboration & Launch',
+        description: 'Worked closely with Azure engineering teams to ensure technical feasibility. Partnered with content design for in-product guidance. Coordinated with Windows 365 PM for feature prioritization and GA release.'
       }
     ],
-    solution: 'A clean, card-based interface that surfaces the most important information and actions on the home screen. Implemented smart shortcuts that learn from user behavior, and simplified critical flows to reduce task completion time by 60%.',
+    solution: 'A streamlined setup wizard with intelligent defaults, progressive disclosure, and contextual help. Integrated Azure resource creation directly into the flow, eliminating portal-hopping. Added pre-flight checks to surface issues before deployment.',
     outcomes: [
       {
-        metric: 'User Engagement',
-        value: '+45%',
-        description: 'Increase in daily active users within 3 months of launch'
+        metric: 'Setup Time',
+        value: '-60%',
+        description: 'Average setup time reduced from 4 hours to 90 minutes'
       },
       {
-        metric: 'Task Completion',
-        value: '+60%',
-        description: 'Faster average task completion time'
+        metric: 'Completion Rate',
+        value: '+85%',
+        description: 'Setup completion rate increased from 27% to 95%'
       },
       {
-        metric: 'User Satisfaction',
-        value: '4.7/5',
-        description: 'App store rating improved from 3.2 to 4.7'
+        metric: 'Support Tickets',
+        value: '-42%',
+        description: 'Setup-related support tickets decreased significantly'
       }
     ],
     images: [
       {
-        url: '/images/projects/banking/screen-1.jpg',
-        alt: 'Home screen showing account overview',
-        caption: 'Streamlined home screen with key account information'
+        url: '/images/projects/windows-365/screen-1.jpg',
+        alt: 'Windows 365 setup wizard',
+        caption: 'Streamlined setup flow with intelligent defaults'
       },
       {
-        url: '/images/projects/banking/screen-2.jpg',
-        alt: 'Transfer flow',
-        caption: 'Simplified transfer process with smart suggestions'
+        url: '/images/projects/windows-365/screen-2.jpg',
+        alt: 'Configuration preview',
+        caption: 'Pre-flight validation before deployment'
       }
     ],
-    tags: ['Mobile App', 'FinTech', 'User Research', 'UI/UX']
+    tags: ['Enterprise SaaS', 'Azure', 'Windows 365', 'IT Admin Experience']
   },
   {
     id: '2',
-    slug: 'ecommerce-checkout-optimization',
-    title: 'E-commerce Checkout Optimization',
-    subtitle: 'Reducing cart abandonment through better UX',
-    category: 'UX',
-    heroImage: '/images/projects/ecommerce/hero.jpg',
-    thumbnail: '/images/projects/ecommerce/thumbnail.jpg',
-    year: 2024,
-    client: 'Fashion Retailer',
-    duration: '2 months',
-    role: 'UX Designer',
-    overview: 'Optimized the checkout experience for a major fashion e-commerce platform to reduce cart abandonment and increase conversion rates. Focused on removing friction points and building user confidence throughout the purchase journey.',
-    challenge: 'The client was experiencing a 68% cart abandonment rate, significantly higher than industry average. Analytics revealed that users were dropping off at multiple stages of the checkout process, with particular issues around form complexity and shipping information.',
+    slug: 'avd-monitoring-dashboard',
+    title: 'AVD Insights Dashboard',
+    subtitle: 'Proactive monitoring for enterprise desktop infrastructure',
+    category: 'Product',
+    heroImage: '/images/projects/avd/hero.jpg',
+    thumbnail: '/images/projects/avd/thumbnail.jpg',
+    year: 2022,
+    client: 'Microsoft',
+    duration: '4 months',
+    role: 'Senior Product Designer',
+    overview: 'Designed a comprehensive monitoring dashboard for Azure Virtual Desktop (AVD) that provides IT administrators with real-time insights into desktop health, user experience, and infrastructure performance across thousands of virtual machines.',
+    challenge: 'IT admins managing large AVD deployments (10,000+ users) had no centralized view of system health. They relied on fragmented Azure Monitor logs and reactive support tickets. Research showed admins spent 15+ hours per week troubleshooting issues that could have been prevented.',
     process: [
       {
-        title: 'Analytics Review',
-        description: 'Analyzed funnel data to identify drop-off points. Conducted heatmap analysis and session recordings to understand user behavior patterns.',
-        image: '/images/projects/ecommerce/analytics.jpg'
+        title: 'User Research',
+        description: 'Shadowed 12 IT admins managing AVD deployments. Analyzed 6 months of support data to identify common issues. Found that 68% of incidents were related to 5 core categories: connectivity, performance, authentication, application delivery, and capacity.'
       },
       {
-        title: 'Competitive Analysis',
-        description: 'Studied best practices from top e-commerce sites. Identified patterns in successful checkout flows and opportunities for differentiation.',
-        image: '/images/projects/ecommerce/competitive.jpg'
+        title: 'Information Architecture',
+        description: 'Mapped out data hierarchy and visualization needs. Designed a three-tier system: Overview (fleet health), Diagnostics (issue investigation), and Trends (capacity planning). Prioritized based on frequency and impact.'
       },
       {
-        title: 'User Testing',
-        description: 'Ran moderated usability tests with 12 participants to observe real checkout behavior. Gathered qualitative feedback on pain points and areas of confusion.',
-        image: '/images/projects/ecommerce/testing.jpg'
+        title: 'Data Visualization',
+        description: 'Created custom chart patterns for time-series data, topology views, and alert prioritization. Worked with data scientists to determine meaningful thresholds. Ensured WCAG AA compliance for all visualizations.'
       },
       {
-        title: 'Iterative Design',
-        description: 'Created multiple iterations of the checkout flow, testing each version with users. Refined the design based on feedback and conversion data.',
-        image: '/images/projects/ecommerce/iterations.jpg'
+        title: 'Pilot & Iteration',
+        description: 'Launched private preview with 50 enterprise customers. Gathered feedback through in-app surveys and monthly calls. Iterated on alert logic and dashboard customization based on real-world usage.'
       }
     ],
-    solution: 'Implemented a single-page checkout with progressive disclosure of information. Added real-time validation, guest checkout option, and clear progress indicators. Integrated trust signals and transparent shipping costs upfront.',
+    solution: 'An AI-powered dashboard that surfaces actionable insights, predicts potential issues, and provides guided remediation. Includes customizable views, automated alerting, and integration with ServiceNow for ticket creation.',
     outcomes: [
       {
-        metric: 'Cart Abandonment',
-        value: '-32%',
-        description: 'Reduction in cart abandonment rate'
+        metric: 'MTTR',
+        value: '-70%',
+        description: 'Mean time to resolution for incidents decreased from 3.2 hours to 58 minutes'
       },
       {
-        metric: 'Conversion Rate',
-        value: '+23%',
-        description: 'Increase in overall checkout conversion'
+        metric: 'Proactive Resolution',
+        value: '45%',
+        description: 'Of issues resolved before user impact, based on predictive alerts'
       },
       {
-        metric: 'Revenue',
-        value: '+$2.4M',
-        description: 'Additional annual revenue from improved conversion'
+        metric: 'Admin Efficiency',
+        value: '+12 hrs/week',
+        description: 'Time saved per admin on monitoring and troubleshooting tasks'
       }
     ],
     images: [
       {
-        url: '/images/projects/ecommerce/screen-1.jpg',
-        alt: 'Checkout overview',
-        caption: 'Single-page checkout with clear progress indicators'
+        url: '/images/projects/avd/screen-1.jpg',
+        alt: 'AVD monitoring dashboard',
+        caption: 'Real-time insights into desktop health and performance'
       },
       {
-        url: '/images/projects/ecommerce/screen-2.jpg',
-        alt: 'Payment section',
-        caption: 'Simplified payment form with trust signals'
+        url: '/images/projects/avd/screen-2.jpg',
+        alt: 'Alert diagnostics',
+        caption: 'Guided remediation for common issues'
       }
     ],
-    tags: ['E-commerce', 'Conversion Optimization', 'User Testing', 'UX']
+    tags: ['Azure Virtual Desktop', 'Data Visualization', 'Dashboards', 'Enterprise IT']
   },
   {
     id: '3',
-    slug: 'design-system-creation',
-    title: 'Enterprise Design System',
-    subtitle: 'Building consistency across 15+ products',
+    slug: 'fluent-design-contribution',
+    title: 'Fluent Design System: Enterprise Patterns',
+    subtitle: 'Building scalable components for complex enterprise workflows',
     category: 'UI',
-    heroImage: '/images/projects/design-system/hero.jpg',
-    thumbnail: '/images/projects/design-system/thumbnail.jpg',
-    year: 2023,
-    client: 'SaaS Platform',
-    duration: '6 months',
-    role: 'Senior Product Designer',
-    overview: 'Led the creation of a comprehensive design system for an enterprise SaaS company with 15+ products. The system needed to provide consistency while allowing flexibility for different product needs and use cases.',
-    challenge: 'The company\'s products had evolved independently over 5 years, resulting in inconsistent experiences, duplicated work, and slow feature development. Different teams were using different component libraries, creating a fragmented user experience.',
+    heroImage: '/images/projects/fluent/hero.jpg',
+    thumbnail: '/images/projects/fluent/thumbnail.jpg',
+    year: 2021,
+    client: 'Microsoft',
+    duration: '8 months (ongoing)',
+    role: 'Design Systems Contributor',
+    overview: 'Led the creation of enterprise-specific components and patterns for Microsoft Fluent Design System, enabling consistent experiences across Azure, Microsoft 365, and Windows products. Focus on complex data tables, multi-step workflows, and admin configurations.',
+    challenge: 'Microsoft\'s consumer-focused Fluent components didn\'t address enterprise needs: complex data tables with 50+ columns, multi-tenant scenarios, bulk operations, and compliance requirements. Product teams were building custom solutions, creating inconsistency.',
     process: [
       {
-        title: 'Audit & Discovery',
-        description: 'Conducted a comprehensive audit of all existing products. Documented inconsistencies and identified common patterns. Interviewed designers and developers across teams to understand needs.',
-        image: '/images/projects/design-system/audit.jpg'
+        title: 'Research & Audit',
+        description: 'Conducted audit across 15 Azure and M365 products. Identified 30+ common patterns being implemented inconsistently. Interviewed designers and engineers to understand pain points and requirements.'
       },
       {
-        title: 'Foundation & Principles',
-        description: 'Established design principles and foundations including color, typography, spacing, and elevation systems. Created comprehensive documentation for each decision.',
-        image: '/images/projects/design-system/foundations.jpg'
+        title: 'Component Design',
+        description: 'Designed 12 enterprise components: advanced data table, command palette, bulk action panel, role-based access controls, and more. Each with variants, states, and comprehensive documentation.'
       },
       {
-        title: 'Component Library',
-        description: 'Built a library of 50+ reusable components in Figma with variants for different states and configurations. Worked closely with engineering to ensure design-dev parity.',
-        image: '/images/projects/design-system/components.jpg'
+        title: 'Documentation & Advocacy',
+        description: 'Created Figma libraries, code examples, and accessibility guidelines. Presented at Microsoft Design Week. Mentored 20+ designers on implementation.'
       },
       {
-        title: 'Documentation & Governance',
-        description: 'Created comprehensive documentation including usage guidelines, accessibility standards, and contribution processes. Established a governance model for ongoing maintenance.',
-        image: '/images/projects/design-system/documentation.jpg'
+        title: 'Adoption & Iteration',
+        description: 'Tracked adoption across products. Gathered feedback through office hours and GitHub. Iterated based on real-world usage and edge cases discovered by teams.'
       }
     ],
-    solution: 'A complete design system with atomic components, pattern libraries, and detailed documentation. Implemented in both Figma and React, with automated testing and version control. Includes accessibility guidelines and internationalization support.',
+    solution: 'A comprehensive library of enterprise patterns with Figma components, React code, and detailed guidelines. Includes responsive behaviors, keyboard navigation, and screen reader support. Published to Microsoft internal design system.',
     outcomes: [
       {
+        metric: 'Adoption',
+        value: '40+ products',
+        description: 'Components used across Azure, M365, and Windows products'
+      },
+      {
         metric: 'Design Time',
-        value: '-50%',
-        description: 'Reduction in time to design new features'
+        value: '-65%',
+        description: 'Reduction in time to design complex enterprise flows'
       },
       {
-        metric: 'Development Speed',
-        value: '+40%',
-        description: 'Faster implementation of UI changes'
-      },
-      {
-        metric: 'Consistency Score',
-        value: '94%',
-        description: 'Measured consistency across all products'
+        metric: 'Consistency',
+        value: '92%',
+        description: 'Pattern consistency score across adopting products'
       }
     ],
     images: [
       {
-        url: '/images/projects/design-system/screen-1.jpg',
-        alt: 'Component library',
-        caption: 'Comprehensive component library in Figma'
+        url: '/images/projects/fluent/screen-1.jpg',
+        alt: 'Fluent enterprise components',
+        caption: 'Enterprise component library in Figma'
       },
       {
-        url: '/images/projects/design-system/screen-2.jpg',
-        alt: 'Documentation site',
-        caption: 'Interactive documentation and guidelines'
+        url: '/images/projects/fluent/screen-2.jpg',
+        alt: 'Component documentation',
+        caption: 'Comprehensive usage guidelines and examples'
       }
     ],
-    tags: ['Design System', 'Component Library', 'Figma', 'Documentation']
+    tags: ['Design Systems', 'Fluent Design', 'Component Library', 'Enterprise Patterns']
   }
 ]
 

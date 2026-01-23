@@ -17,9 +17,9 @@ export default function ContactPage() {
         {/* Header */}
         <FadeIn>
           <div className="mb-16 text-center">
-            <h1 className="mb-4 text-5xl font-bold md:text-6xl">Let's Work Together</h1>
+            <h1 className="mb-4 text-5xl font-bold md:text-6xl">Let's Connect</h1>
             <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Have a project in mind? I'd love to hear about it. Fill out the form below or reach out directly.
+              Interested in collaborating, speaking opportunities, or discussing enterprise design? I'd love to hear from you.
             </p>
           </div>
         </FadeIn>

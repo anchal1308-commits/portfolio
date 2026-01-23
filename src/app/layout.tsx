@@ -16,25 +16,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Your Name - Product Designer",
-    template: "%s | Your Name"
+    default: "Anchal Aggarwal - Senior Product Designer at Microsoft",
+    template: "%s | Anchal Aggarwal"
   },
-  description: "Product Designer portfolio showcasing user-centered design solutions and case studies",
-  keywords: ["product design", "UX design", "UI design", "portfolio", "case studies"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  description: "8 years designing enterprise SaaS at Microsoft. Specializing in Windows 365, Azure Virtual Desktop, and cloud computing experiences.",
+  keywords: ["product design", "Microsoft", "Enterprise SaaS", "Windows 365", "Azure Virtual Desktop", "cloud computing", "design systems"],
+  authors: [{ name: "Anchal Aggarwal" }],
+  creator: "Anchal Aggarwal",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-    title: "Your Name - Product Designer",
-    description: "Product Designer portfolio showcasing user-centered design solutions and case studies",
-    siteName: "Your Name Portfolio"
+    title: "Anchal Aggarwal - Senior Product Designer at Microsoft",
+    description: "8 years designing enterprise SaaS at Microsoft. Specializing in Windows 365, Azure Virtual Desktop, and cloud computing experiences.",
+    siteName: "Anchal Aggarwal Portfolio"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name - Product Designer",
-    description: "Product Designer portfolio showcasing user-centered design solutions and case studies"
+    title: "Anchal Aggarwal - Senior Product Designer at Microsoft",
+    description: "8 years designing enterprise SaaS at Microsoft. Specializing in Windows 365, Azure Virtual Desktop, and cloud computing experiences."
   }
 };
 

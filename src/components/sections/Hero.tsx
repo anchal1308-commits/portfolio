@@ -11,15 +11,15 @@ export function Hero() {
       <div className="mx-auto max-w-4xl text-center">
         <FadeIn>
           <h1 className="mb-6 text-5xl font-bold leading-tight tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-            Crafting Digital
+            Designing Enterprise
             <br />
-            <span className="text-muted-foreground">Experiences</span>
+            <span className="text-muted-foreground">SaaS at Scale</span>
           </h1>
         </FadeIn>
 
         <SlideIn delay={0.2}>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground sm:text-xl md:text-2xl">
-            Product Designer focused on creating intuitive, user-centered solutions that make a difference
+            Senior Product Designer at Microsoft | 8 years crafting cloud desktop experiences for Windows 365 & Azure Virtual Desktop
           </p>
         </SlideIn>
 

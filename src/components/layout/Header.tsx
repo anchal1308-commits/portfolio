@@ -34,7 +34,7 @@ export function Header() {
         <div className="flex items-center justify-between py-6">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold hover:opacity-80 transition-opacity">
-            Your Name
+            Anchal Aggarwal
           </Link>
 
           {/* Desktop Navigation */}

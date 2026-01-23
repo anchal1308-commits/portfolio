@@ -32,7 +32,7 @@ export function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Anchal Aggarwal. All rights reserved.
           </p>
         </div>
       </Container>

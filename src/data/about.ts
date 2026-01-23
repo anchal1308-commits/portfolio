@@ -1,26 +1,26 @@
 export const aboutData = {
-  name: 'Your Name',
-  title: 'Product Designer',
-  bio: "I'm a Product Designer with 5+ years of experience creating user-centered digital experiences. I specialize in transforming complex problems into elegant, intuitive solutions that delight users and drive business results.",
+  name: 'Anchal Aggarwal',
+  title: 'Senior Product Designer at Microsoft',
+  bio: "I'm a Senior Product Designer at Microsoft with 8 years of experience designing enterprise cloud computing solutions. I specialize in creating intuitive, scalable experiences for Windows 365 and Azure Virtual Desktop—products that empower organizations worldwide to enable secure, flexible remote work. My work focuses on transforming complex virtualization technologies into seamless user experiences for IT administrators and end users alike.",
 
   skills: [
-    'User Research & Testing',
-    'UI/UX Design',
-    'Prototyping & Interaction Design',
-    'Design Systems',
-    'Information Architecture',
-    'Wireframing',
-    'Visual Design',
-    'User Flows & Journey Mapping'
+    'Enterprise SaaS Design',
+    'Cloud Desktop Experiences',
+    'Design Systems at Scale',
+    'User Research for IT Professionals',
+    'Data-Driven Design',
+    'Accessibility & Compliance',
+    'Cross-Functional Leadership',
+    'Design Strategy'
   ],
 
   tools: [
     'Figma',
-    'Adobe XD',
-    'Sketch',
-    'Principle',
-    'Framer',
-    'InVision',
+    'Microsoft Fluent Design System',
+    'Azure DevOps',
+    'Power BI',
+    'UserTesting',
+    'Optimal Workshop',
     'Miro',
     'Adobe Creative Suite'
   ],
@@ -28,26 +28,20 @@ export const aboutData = {
   experience: [
     {
       role: 'Senior Product Designer',
-      company: 'Tech Company',
-      period: '2022 - Present',
-      description: 'Leading design for mobile and web products serving 2M+ users. Established design system and improved user engagement by 45% through data-driven design decisions.'
+      company: 'Microsoft',
+      period: '2020 - Present',
+      description: 'Leading design for Windows 365 and Azure Virtual Desktop, serving millions of enterprise users. Drive design strategy, research, and execution for cloud-based desktop virtualization experiences. Collaborate with engineering, PM, and research teams across Azure and Windows divisions.'
     },
     {
       role: 'Product Designer',
-      company: 'Startup Inc',
-      period: '2020 - 2022',
-      description: 'Designed core product features from concept to launch. Collaborated with cross-functional teams to deliver user-centered solutions that increased conversion by 30%.'
-    },
-    {
-      role: 'UX Designer',
-      company: 'Design Agency',
-      period: '2019 - 2020',
-      description: 'Worked with diverse clients across e-commerce, finance, and healthcare. Conducted user research, created wireframes, and delivered high-fidelity designs for web and mobile.'
+      company: 'Microsoft',
+      period: '2017 - 2020',
+      description: 'Designed core features for Azure Virtual Desktop during its launch phase. Conducted extensive user research with IT administrators and end users to inform product direction. Contributed to Microsoft Fluent Design System.'
     }
   ],
 
-  philosophy: "I believe great design is invisible—it should solve problems so elegantly that users don't even notice it's there. My approach combines deep user empathy with strategic thinking, always grounded in research and validated through testing. I'm passionate about creating inclusive, accessible experiences that work for everyone.",
+  philosophy: "Great enterprise design balances power with simplicity. In cloud computing, I focus on reducing complexity for IT professionals while maintaining the flexibility they need. My approach combines quantitative data analysis with qualitative user research, ensuring solutions work for both the CIO making strategic decisions and the end user accessing their virtual desktop. I believe accessibility and security aren't constraints—they're design opportunities.",
 
-  email: 'your@email.com',
-  location: 'San Francisco, CA'
+  email: 'anchal1308@gmail.com',
+  location: 'Redmond, WA'
 }
