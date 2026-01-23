@@ -5,65 +5,123 @@ export const projects: Project[] = [
     id: '1',
     slug: 'windows-365-cloud-apps',
     title: 'Windows 365 Cloud Apps',
-    subtitle: 'Reducing IT admin onboarding time by 60%',
+    subtitle: 'A virtual app delivery solution for IT administrators',
     category: 'Product',
     heroImage: '/images/projects/windows-365/hero.jpg',
     thumbnail: '/images/projects/windows-365/thumbnail.jpg',
-    year: 2023,
+    year: 2024,
     client: 'Microsoft',
-    duration: '6 months',
+    duration: '8 months',
     role: 'Lead Product Designer',
-    overview: 'Redesigned the Windows 365 initial setup flow for IT administrators, transforming a complex 20-step configuration process into a guided 5-step experience. The goal was to reduce time-to-first-Cloud-PC while maintaining enterprise-grade security and customization.',
-    challenge: 'Windows 365 setup required IT admins to configure network settings, Azure AD groups, licensing, and security policies across multiple Azure portals. Research showed 73% of admins abandoned setup before completing it, and average completion time was 4+ hours for first-time users.',
+    overview: 'Designed a seamless virtual app delivery experience integrated into Windows 365, enabling IT administrators to efficiently provision and manage cloud apps for shift workers and contractors. This solution addresses a critical product gap while enabling Windows 365 to deliver virtual apps on demand, unlocking 120K new seats by migrating existing VDI customers.',
+    challenge: 'IT admins faced significant challenges with existing virtual app solutions: high learning curves, forced use of multiple separate solutions for desktops and apps, and the overhead of managing full desktops when only a few apps were needed. The goal was to leverage Windows 365 to provide a seamless and integrated virtual app delivery experience while working within constraints: no changes to Windows 365 existing capabilities, no control over Intune app model, and balancing urgent requirements with long-term strategic goals.',
     process: [
       {
-        title: 'Discovery & Research',
-        description: 'Conducted 30+ interviews with IT administrators across enterprise customers (Fortune 500). Analyzed telemetry data showing drop-off points. Created journey maps identifying pain points in Azure portal navigation, unclear prerequisites, and overwhelming configuration options.'
+        title: 'Discovery and Multi-Year Strategy',
+        description: 'Worked with PMs and engineers through weekly syncs and customer calls. Established multi-year roadmap.'
       },
       {
         title: 'Design Principles',
-        description: 'Established three core principles: Progressive Disclosure (show only what\'s needed now), Intelligent Defaults (reduce decisions), and Contextual Guidance (educate as users configure). These became foundational for the redesign.'
+        description: 'Defined three core principles with stakeholders: Seamless Integration, Consistency, and Simplicity.'
       },
       {
-        title: 'Prototyping & Testing',
-        description: 'Built interactive prototypes with Microsoft Fluent components. Ran 5 rounds of usability testing with IT admins. Iterated based on task completion rates and qualitative feedback. Validated with both SMB and enterprise customers.'
+        title: 'Initial Designs and Research',
+        description: 'Collaborated with cross-product designers and UX researchers. Conducted design critiques to validate concepts.'
       },
       {
-        title: 'Collaboration & Launch',
-        description: 'Worked closely with Azure engineering teams to ensure technical feasibility. Partnered with content design for in-product guidance. Coordinated with Windows 365 PM for feature prioritization and GA release.'
+        title: 'Iterations',
+        description: 'Ran stakeholder workshops and critiques with PMs and design partners. Refined management flows.'
+      },
+      {
+        title: 'Final Research and Design Hand-off',
+        description: 'Validated with UX researchers and developers. Proposed visual refresh using Fluent Web library.'
       }
     ],
-    solution: 'A streamlined setup wizard with intelligent defaults, progressive disclosure, and contextual help. Integrated Azure resource creation directly into the flow, eliminating portal-hopping. Added pre-flight checks to surface issues before deployment.',
+    solution: 'A streamlined Cloud Apps experience within Windows 365 that simplifies app provisioning and management. Key features include simplified app selection from existing Intune apps, unified provisioning policy creation, and a modernized UI built on Fluent Web design library. The solution integrates seamlessly into the existing Windows 365 admin experience.',
     outcomes: [
       {
-        metric: 'Setup Time',
-        value: '-60%',
-        description: 'Average setup time reduced from 4 hours to 90 minutes'
+        metric: 'Management',
+        value: 'Simplified',
+        description: 'Streamlined app provisioning workflow for IT administrators'
       },
       {
-        metric: 'Completion Rate',
-        value: '+85%',
-        description: 'Setup completion rate increased from 27% to 95%'
+        metric: 'App Selection',
+        value: 'Unified',
+        description: 'Consistent experience across all app types in Windows 365'
       },
       {
-        metric: 'Support Tickets',
-        value: '-42%',
-        description: 'Setup-related support tickets decreased significantly'
+        metric: 'Visual Design',
+        value: 'Modernized',
+        description: 'Updated UI using Fluent Web design library'
       }
     ],
     images: [
       {
         url: '/images/projects/windows-365/screen-1.jpg',
-        alt: 'Windows 365 setup wizard',
-        caption: 'Streamlined setup flow with intelligent defaults'
+        alt: 'Cloud Apps provisioning policy',
+        caption: 'Simplified app selection and provisioning workflow'
       },
       {
         url: '/images/projects/windows-365/screen-2.jpg',
-        alt: 'Configuration preview',
-        caption: 'Pre-flight validation before deployment'
+        alt: 'Modernized Cloud Apps interface',
+        caption: 'Visual refresh with Fluent Web design library'
       }
     ],
-    tags: ['Enterprise SaaS', 'Azure', 'Windows 365', 'IT Admin Experience']
+    designDetails: [
+      {
+        title: 'Setup - Step 1 | Introduce Cloud App configuration option in existing workflow',
+        phase: 'final',
+        image: '/images/projects/windows-365/design-setup-final.jpg',
+        alt: 'Setup step 1 showing Cloud App configuration in existing workflow',
+        insights: ['What worked well: Concept and order of fields', 'Recommendation: Clarify content'],
+        updates: ['Clear content through content reviews']
+      },
+      {
+        title: 'Access | Assignment of Cloud Apps to user groups - Exploration',
+        phase: 'exploration',
+        image: '/images/projects/windows-365/design-access-exploration.jpg',
+        alt: 'Three workflow options for assigning Cloud Apps to user groups',
+        insights: ['Explored three workflows: One app → One user group, All apps → One user group, Two tier approach']
+      },
+      {
+        title: 'Access | Workshop with stakeholders to analyze workflows',
+        phase: 'exploration',
+        image: '/images/projects/windows-365/design-access-workshop.jpg',
+        alt: 'Stakeholder workshop analyzing workflow options with pros and cons',
+        insights: ['Conducted workshops to evaluate different workflow approaches', 'Analyzed pros and cons of each option with stakeholder input']
+      },
+      {
+        title: 'Access | Assignment of Cloud Apps to user groups - Final Design',
+        phase: 'final',
+        image: '/images/projects/windows-365/design-access-final.jpg',
+        alt: 'Final design for Cloud Apps assignment to user groups',
+        insights: ['What worked well: All apps → One user group', 'What worked well: Users liked the option to adopt existing workflow'],
+        updates: ['Integrated with the existing setup', 'No change required in existing flow']
+      },
+      {
+        title: 'Manage | Entry point for list of Cloud Apps - Exploration',
+        phase: 'exploration',
+        image: '/images/projects/windows-365/design-manage-exploration.jpg',
+        alt: 'Exploration of different entry points for Cloud Apps list',
+        insights: ['Explored multiple navigation entry points', 'Evaluated different information hierarchies']
+      },
+      {
+        title: 'Manage | Entry point for list of Cloud Apps - Final Design',
+        phase: 'final',
+        image: '/images/projects/windows-365/design-manage-final.jpg',
+        alt: 'Final design for Cloud Apps list entry point with customized data grid',
+        insights: ['No clear result: 50-50 split between entry point of Cloud Apps', 'Recommendation: Add more columns'],
+        updates: ['Customized Intune data grid', 'Content review for additional columns']
+      },
+      {
+        title: 'Manage | Key action and statuses',
+        phase: 'final',
+        image: '/images/projects/windows-365/design-manage-actions.jpg',
+        alt: 'Key actions and statuses in Cloud Apps management interface',
+        updates: ['Publish as an extra step', 'Some columns were technically not feasible to implement']
+      }
+    ],
+    tags: ['Windows 365', 'Cloud Apps', 'Enterprise SaaS', 'Fluent Design', 'IT Admin Experience']
   },
   {
     id: '2',

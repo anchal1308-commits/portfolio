@@ -16,6 +16,7 @@ export interface Project {
   solution: string
   outcomes: Outcome[]
   images: ProjectImage[]
+  designDetails?: DesignDetail[]
   tags?: string[]
 }
 
@@ -35,4 +36,13 @@ export interface ProjectImage {
   url: string
   alt: string
   caption?: string
+}
+
+export interface DesignDetail {
+  title: string
+  phase: 'exploration' | 'final'
+  image: string
+  alt: string
+  insights?: string[]
+  updates?: string[]
 }

@@ -137,13 +137,72 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
           {/* Process */}
           <CaseStudySection title="Design Process" delay={0.5}>
-            <div className="space-y-12">
-              {project.process.map((step, index) => (
-                <div key={index}>
-                  <h3 className="mb-4 text-2xl font-semibold">{step.title}</h3>
-                  <p className="mb-6 text-lg leading-relaxed">{step.description}</p>
-                  {step.image && (
-                    <div className="aspect-video w-full rounded-lg bg-muted">
+            <div className="relative overflow-x-auto pb-4">
+              <div className="flex gap-4 min-w-max pb-4">
+                {project.process.map((step, index) => (
+                  <div key={index} className="flex items-center">
+                    {/* Process Card */}
+                    <div className="relative flex flex-col items-center w-64 group">
+                      {/* Step Number */}
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold mb-4 shadow-md">
+                        {index + 1}
+                      </div>
+
+                      {/* Card */}
+                      <div className="w-full p-6 rounded-lg border-2 border-border bg-card hover:border-primary transition-all hover:shadow-lg">
+                        <h3 className="text-base font-semibold mb-3 text-center min-h-[2.5rem] flex items-center justify-center">
+                          {step.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground text-center line-clamp-3">
+                          {step.description}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Arrow */}
+                    {index < project.process.length - 1 && (
+                      <div className="flex items-center px-3 pb-16">
+                        <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Timeline info */}
+            <div className="mt-6 text-center text-sm text-muted-foreground">
+              <span className="font-semibold text-foreground">{project.duration}</span> (2024-2025)
+            </div>
+          </CaseStudySection>
+
+          {/* Solution */}
+          <CaseStudySection title="The Solution" delay={0.6}>
+            <p className="text-lg leading-relaxed">{project.solution}</p>
+          </CaseStudySection>
+
+          {/* Design Details */}
+          {project.designDetails && project.designDetails.length > 0 && (
+            <CaseStudySection title="Design Evolution" delay={0.65}>
+              <div className="space-y-16">
+                {project.designDetails.map((detail, index) => (
+                  <div key={index} className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <span
+                        className={`rounded-full px-3 py-1 text-xs font-medium ${
+                          detail.phase === 'exploration'
+                            ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
+                            : 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
+                        }`}
+                      >
+                        {detail.phase === 'exploration' ? 'Early Exploration' : 'Final Design'}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-semibold">{detail.title}</h3>
+
+                    <div className="aspect-video w-full rounded-lg bg-muted overflow-hidden">
                       <div className="flex h-full items-center justify-center text-muted-foreground">
                         <svg
                           className="h-20 w-20"
@@ -160,16 +219,43 @@ export default async function CaseStudyPage({ params }: PageProps) {
                         </svg>
                       </div>
                     </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </CaseStudySection>
 
-          {/* Solution */}
-          <CaseStudySection title="The Solution" delay={0.6}>
-            <p className="text-lg leading-relaxed">{project.solution}</p>
-          </CaseStudySection>
+                    {detail.insights && detail.insights.length > 0 && (
+                      <div className="rounded-lg bg-blue-50 dark:bg-blue-950 p-4">
+                        <h4 className="mb-2 text-sm font-semibold text-blue-900 dark:text-blue-100">
+                          Insights from UXR
+                        </h4>
+                        <ul className="space-y-1">
+                          {detail.insights.map((insight, i) => (
+                            <li key={i} className="text-sm text-blue-800 dark:text-blue-200 flex items-start">
+                              <span className="mr-2">•</span>
+                              <span>{insight}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {detail.updates && detail.updates.length > 0 && (
+                      <div className="rounded-lg bg-green-50 dark:bg-green-950 p-4">
+                        <h4 className="mb-2 text-sm font-semibold text-green-900 dark:text-green-100">
+                          Design Update
+                        </h4>
+                        <ul className="space-y-1">
+                          {detail.updates.map((update, i) => (
+                            <li key={i} className="text-sm text-green-800 dark:text-green-200 flex items-start">
+                              <span className="mr-2">✓</span>
+                              <span>{update}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </CaseStudySection>
+          )}
 
           {/* Outcomes */}
           <CaseStudySection title="Outcomes & Impact" delay={0.7}>
