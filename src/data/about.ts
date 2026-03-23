@@ -30,13 +30,19 @@ export const aboutData = {
       role: 'Senior Product Designer',
       company: 'Microsoft',
       period: '2020 - Present',
-      description: 'Leading design for cloud desktop virtualization experiences, serving millions of enterprise users. Drive design strategy, research, and execution for cloud-based solutions. Collaborate with engineering, PM, and research teams across Azure and Windows divisions.'
+      description: 'Leading design for cloud desktop virtualization experiences across two products, serving millions of enterprise users. Driving design strategy and execution for IT admin workflows.'
     },
     {
-      role: 'Product Designer',
+      role: 'UX Designer',
       company: 'Salesforce',
-      period: '2017 - 2020',
+      period: '2018 - 2020',
       description: 'Designed enterprise SaaS experiences for cloud-based solutions. Conducted extensive user research with business users and administrators to inform product direction. Contributed to design system development and cross-functional collaboration.'
+    },
+    {
+      role: 'UX Design and Research Intern',
+      company: 'Salesforce',
+      period: '2017',
+      description: 'Supported UX research and design initiatives, conducting user interviews and usability studies to inform product decisions across enterprise cloud products.'
     }
   ],
 
