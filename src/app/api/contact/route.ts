@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: 'Portfolio Contact <onboarding@resend.dev>',
-      to: [process.env.CONTACT_EMAIL || 'your-email@example.com'],
+      to: [process.env.CONTACT_EMAIL || 'anchal1308@gmail.com'],
       replyTo: validatedData.email,
       subject: `Portfolio Contact: ${validatedData.subject}`,
       text: `From: ${validatedData.name} (${validatedData.email})\n\nMessage:\n${validatedData.message}`,

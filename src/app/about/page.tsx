@@ -86,7 +86,7 @@ export default function AboutPage() {
 
           <div className="divide-y divide-border">
             {aboutData.experience.map((exp, index) => (
-              <SlideIn key={index} delay={0.5 + index * 0.1} direction="left">
+              <SlideIn key={`${exp.company}-${exp.period}`} delay={0.5 + index * 0.1} direction="left">
                 <div className="py-6 md:py-8 grid md:grid-cols-[1fr_auto] gap-4 md:gap-6 items-start">
                   <div>
                     <h3 className="text-base sm:text-xl font-bold">{exp.role}</h3>

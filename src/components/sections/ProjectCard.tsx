@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import { Project } from '@/types/project'
 import { FadeIn } from '@/components/animations/FadeIn'

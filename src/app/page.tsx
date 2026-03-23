@@ -43,7 +43,7 @@ export default function Home() {
 
             <div className="divide-y divide-border">
               {aboutData.experience.map((exp, index) => (
-                <SlideIn key={index} delay={0.1 + index * 0.1} direction="left">
+                <SlideIn key={`${exp.company}-${exp.period}`} delay={0.1 + index * 0.1} direction="left">
                   <div className="py-6 md:py-8 grid md:grid-cols-[1fr_auto] gap-4 md:gap-8 items-start hover:bg-foreground/[0.03] transition-colors -mx-4 px-4 md:-mx-6 md:px-6 rounded-sm">
                     <div>
                       <h3 className="text-base sm:text-lg font-bold">{exp.role}</h3>

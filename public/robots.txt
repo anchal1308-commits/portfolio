@@ -1,0 +1,3 @@
+# Disallow all crawling while site is in private preview
+User-agent: *
+Disallow: /
