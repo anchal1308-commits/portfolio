@@ -3,6 +3,15 @@ import { Resend } from 'resend'
 import { contactSchema } from '@/lib/validations'
 import { z } from 'zod'
 
+function escapeHtml(str: string) {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;')
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -29,13 +38,13 @@ export async function POST(request: NextRequest) {
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #0a0a0a;">New Contact Form Submission</h2>
           <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <p><strong>Name:</strong> ${validatedData.name}</p>
-            <p><strong>Email:</strong> ${validatedData.email}</p>
-            <p><strong>Subject:</strong> ${validatedData.subject}</p>
+            <p><strong>Name:</strong> ${escapeHtml(validatedData.name)}</p>
+            <p><strong>Email:</strong> ${escapeHtml(validatedData.email)}</p>
+            <p><strong>Subject:</strong> ${escapeHtml(validatedData.subject)}</p>
           </div>
           <div style="margin-top: 20px;">
             <h3>Message:</h3>
-            <p style="white-space: pre-wrap;">${validatedData.message}</p>
+            <p style="white-space: pre-wrap;">${escapeHtml(validatedData.message)}</p>
           </div>
         </div>
       `

@@ -8,7 +8,7 @@ export async function POST(request: Request) {
   }
 
   const response = NextResponse.json({ ok: true })
-  response.cookies.set('portfolio_auth', process.env.PORTFOLIO_PASSWORD!, {
+  response.cookies.set('portfolio_auth', process.env.PORTFOLIO_SECRET!, {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',

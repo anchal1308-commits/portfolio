@@ -3,9 +3,9 @@ import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
   const cookie = request.cookies.get('portfolio_auth')
-  const password = process.env.PORTFOLIO_PASSWORD
+  const secret = process.env.PORTFOLIO_SECRET
 
-  if (cookie?.value === password) {
+  if (secret && cookie?.value === secret) {
     return NextResponse.next()
   }
 
